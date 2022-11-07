@@ -1,0 +1,783 @@
+@font-face {
+    font-family: cooper;
+    src: url(./CooperLtBTWXXLight.ttf);
+}
+*
+{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: cooper;
+}
+html,body{
+width:100%;
+height:100%;
+}
+
+#nav{
+    width: 100%;
+    height:90px;
+    /* background-color: red; */
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    position: fixed;
+    top: 0;
+    padding: 0px 30px;
+    z-index: 999;
+    background-color: #fff;
+}
+#nav>h1
+{
+    font-family: cooper;
+    font-weight: 500;
+    font-size: 32px;
+}
+#nav h1 span{
+    font-size:40px;
+    color: springgreen;
+}
+#nav #part2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+#nav #part2 a{
+    font-size:16px;
+    color: black;
+    text-decoration: none;
+    margin:20px;
+    text-transform: capitalize;
+}
+#nav #part2 a:hover
+{
+    text-decoration:underline springgreen;
+}
+#nav #part2 a:nth-last-child(1){
+    padding:9px 38px;
+    border-radius: 50px;
+    border: 1px solid rgb(190, 182, 182);
+}
+#contact-us
+{
+    display: flex;
+    align-items: center;
+    gap:10px;
+    position: relative;
+    overflow: hidden;
+}
+#contact-us h5{
+    font-size:15px;
+    position: relative;
+    font-weight: 100;
+    z-index: 99;
+}
+.ri-arrow-right-line
+{
+    position: relative;
+    z-index: 99;
+    font-size:25px;
+}
+#green{
+    position: absolute;
+    top: 0%;
+    left:-100%;
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    transition: left 0.5s ease;
+} 
+#contact-us:hover #green
+{
+    left:0;
+}
+#page1
+{
+    width: 100%;
+    height:100vh;
+    position: relative;
+    /* background-color:pink; */
+}
+#page1 h1
+{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size:100px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 100;
+    line-height: -70px;
+    z-index: 1;
+}
+#page1 #find-out
+{
+    width: 350px;
+    height:60px;
+    position:relative;
+    top:70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#page1 #find-out h6{
+    font-size:25px;
+    font-family: gilroy medium;
+}
+#page1 #find-out .arrow{
+    width: 65px;
+    height: 30px;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(190, 182, 182);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.hara
+{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left:-100%;
+    transition: left 0.6s ease;
+}
+.arrow:hover .hara
+{
+    left: 0;
+    cursor: pointer;
+}
+.arrow i:hover{
+    cursor: pointer;
+}
+#page1 h1::after{
+    content: "";
+    position: absolute;
+    width:45%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+#page1 #img1
+{
+    position: absolute;
+    height:70vh;
+    top: 17%;
+    left: 8%;
+}
+#page1 #img2
+{
+    position: absolute;
+    height:22vh;
+    right: 21%;
+    top:14%;
+}
+#page1 #img3
+{
+    position: absolute;
+    height:37vh;
+    bottom: 7%;
+    right:8%;
+}
+#page1 img
+{
+    transition: margin 0.4s ease;
+}
+#page1 img:hover{
+    margin-top: -10px;
+}
+#page1 #img3:hover{
+    margin-bottom:10px;
+}
+#page2
+{
+    width: 100%;
+    height: 55vh;
+    background-color:black;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+}
+#upper
+{
+    height:3vh;
+    /* background-color:rgb(13, 15, 110); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top:-10%;
+    gap:15px;
+}
+#dot
+{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    background-color: springgreen;
+}
+
+#upper h5
+{
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+#lower
+{
+    width:50vw;
+    /* background-color: aqua; */
+    
+}
+#lower h1
+{
+    color: white;
+    font-size:50px;
+    text-align: center;
+    font-weight: 100;
+}
+#lower h1::before{
+    content: "";
+    position: absolute;
+    width:20%;
+    height:48%;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    background-size: cover;
+    top:60%;
+    left:48.5%;
+    transform: translate(-50%,0%);
+}
+#about-us
+{
+    /* height: 30px; */
+    /* background-color: aqua; */
+    position: absolute;
+    top: 82%;
+    left:49%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
+#about-us h2
+{
+    font-size:30px;
+    color: #fff;
+}
+#arrow2
+{
+    width: 70px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid rgb(190, 182, 182);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+#arrow2>i
+{
+    color: #fff;
+}
+#hara2
+{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left:-100%;
+    transition: left 0.6s ease;
+}
+#arrow2:hover #hara2
+{
+    left: 0;
+    cursor: pointer;
+}
+#arrow2>i:hover{
+    cursor: pointer;
+}
+#page3
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    /* background-color: yellow; */
+}
+#page3 #left
+{
+    width: 50%;
+    height: 100vh;
+    /* background-color:purple; */
+    position: relative;
+}
+#one
+{
+    height: 59vh;
+}
+#two
+{
+        height: 30vh;
+        position: absolute;
+        top: 0;
+        left:22.5%;
+}
+#three
+{
+    height:28vh;
+    position: absolute;
+    top: 63%;
+    left: 0;
+}
+#fourth
+{
+    height:66vh;
+    position: absolute;
+    bottom: 0;
+    left: 22.5%; 
+}
+#page3 #right
+{
+    width: 50%;
+    height: 100vh;
+    /* background-color: purple; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#text
+{
+    /* background-color: red; */
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    width:33vw;
+    height: 55vh;
+    position: relative;
+    left:-10%;
+    /* line-height: 100px; */
+}
+#heading
+{
+    /* background-color: aqua; */
+    width:100%;
+    position: absolute;
+    top: 0;
+    line-height:85px;
+}
+#heading h1
+{
+    font-size: 65px;
+    font-weight: 500;
+}
+#heading h1::before{
+    content: "";
+    position: absolute;
+    width:40%;
+    height: 16px;
+    background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+    background-size: cover;
+    top:42%;
+    left:42%;
+    transform: translate(-50%,0%);
+}
+#sub
+{
+    /* background-color: aquamarine; */
+    line-height:37px;
+    text-align:left;
+    width: 30vw;
+    position: absolute;
+    left: 0;
+    top:38%;
+}
+#sub p
+{
+    font-size: 18px;
+}
+#learn
+{
+    width: 100%;
+    height:60px;
+    /* background-color: yellow; */
+    position: relative;
+    top:40%;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    gap: 30px;
+    /* padding:0px 10px; */
+    /* margin-right:40px; */
+    /* text-align: left; */
+}
+#learn #photo
+{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1663054688278-ebf09d654d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+    /* margin-right: 100px; */
+    /* position: absolute;
+    left: 0; */
+}
+#learn h4
+{
+    font-size:22px;
+    /* margin-right:70px; */
+}
+#our-services
+{
+    width:180px;
+    height:45px;
+    /* background-color: aqua; */
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    /* padding:10px 55px; */
+    border: 1px solid rgb(190, 182, 182);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+#our-services>h5
+{
+    font-size:18px;
+    text-transform: capitalize;
+    z-index: 99;
+    font-weight: 500;
+}
+#our-services>#hara3
+{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left:-100%;
+    transition: left 0.6s ease;
+    /* z-index:99; */
+}
+#our-services:hover #hara3
+{
+    left: 0;
+    cursor: pointer;
+}
+#page4
+{
+    width: 100%;
+    height: 90vh;
+    background-color:white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:7vh;
+    /* margin-top: 20px; */
+    /* line-height:15vh; */
+}
+#page4 #top
+{
+    /* position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%); */
+    width:45vw;
+    text-align: center;
+    /* background-color: rebeccapurple; */
+    position: relative;
+}
+#top h1
+{
+    font-size: 52px;
+    font-weight: 500;
+}
+#top h1::before{
+    content: "";
+    position: absolute;
+    width:7.5vw;
+    height:8.5vh;
+    background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
+    background-size: cover;
+    transform: translate(-50%,0%);
+    left: 28.7%;
+    top:-6%;
+}
+#brands
+{
+    width:60%;
+    height:60%;
+    /* background-color: pink; */
+    position: relative;
+}
+#row1
+{
+    width: 100%;
+    height:25%;
+    /* background-color: yellow; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#row2
+{
+    width: 100%;
+    height: 25%;
+    /* background-color: green; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#row3
+{
+    width: 100%;
+    height: 25%;
+    /* background-color: red; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#row4
+{
+    width: 100%;
+    height: 25%;
+    /* background-color: blue; */
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+#brands .img
+{
+    height:4vh;
+}
+#page5
+{
+    width: 100%;
+    height:80vh;
+    background-color:#fff;
+    position: relative;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    gap:50px;
+}
+#box
+{
+    width:66%;
+    height:56%;
+    /* background-color: yellow; */
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+#box1
+{
+    width:32vw;
+    height:45vh;
+    background-image: url(./Golf.webp);
+    background-size: cover;
+
+}
+#box2
+{
+    width:32vw;
+    height:45vh;
+    background-image: url(./stationery.webp);
+    background-size: cover;
+}
+#see-more
+{
+    width:20%;
+    height:8%;
+    /* background-color: yellow; */
+    position: absolute;
+    bottom: 8%;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+
+}
+#photu
+{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-image: url(https://plus.unsplash.com/premium_photo-1663054688278-ebf09d654d33?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+    background-size: cover;
+}
+#see-more>h4
+{
+    font-size:20px;
+}
+#our-work
+{
+    width:180px;
+    height:45px;
+    /* background-color: aqua; */
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    /* padding:10px 55px; */
+    border: 1px solid rgb(190, 182, 182);
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+#our-work>h5
+{
+    font-size:18px;
+    text-transform: capitalize;
+    z-index: 99;
+    font-weight: 500;
+}
+#our-work>#hara4
+{
+    width: 100%;
+    height: 100%;
+    background-color: springgreen;
+    position: absolute;
+    top: 0;
+    left:-100%;
+    transition: left 0.6s ease;
+    /* z-index:99; */
+}
+#our-work:hover #hara4
+{
+    left: 0;
+    cursor: pointer;
+}
+#page6
+{
+    width: 100%;
+    height:75vh;
+    /* background-color: rgb(255, 0, 136); */
+    position: relative;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; */
+    display: flex;
+    /* -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center; */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100px;
+    height:70px;
+    object-fit: cover;
+  }
+  .swiper-slide h3
+  {
+    font-size: 3vw;
+    width: 60%;
+    font-weight: 100;
+    margin-top:50px;
+  }
+  .swiper-slide h4
+  {
+    font-size:20px;
+    /* width: 60%; */
+    font-weight: 100;
+    margin-top:50px;
+    padding: 0 25px;
+    /* background-color: red; */
+    position: relative;
+  }
+  .swiper-slide h4::before
+  {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: springgreen;
+    left: 0;
+    top:15%;
+  }
+  .swiper-slide h5
+  {
+    font-size:18px;
+    /* width: 60%; */
+    font-weight: 100;
+    margin-top:5px;
+    color: grey;
+  }
+#page7
+{
+    width: 100%;
+    height:70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    /* gap: 50px; */
+    background-color:black;
+}
+#page7 img
+{
+    position: absolute;
+    top: 0;
+}
+#page7 h1
+{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 60px;
+    color: white;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
